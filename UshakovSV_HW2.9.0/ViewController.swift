@@ -13,7 +13,6 @@ class ViewController: UIViewController {
 	@IBOutlet weak var animationViewButtonOutlet: SpringButton!
 	@IBOutlet weak var springAnimationView: SpringView! {
 		didSet { springAnimationView.layer.cornerRadius = springAnimationView.frame.height / 10
-			springAnimationView.layer.cornerRadius = springAnimationView.frame.width / 4
 		}
 	}
 	@IBOutlet var settingsNameLabel: UILabel!

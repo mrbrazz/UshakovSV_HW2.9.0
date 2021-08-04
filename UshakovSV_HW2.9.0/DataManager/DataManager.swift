@@ -15,43 +15,18 @@ class DataManager {
 	var animation: [Spring.AnimationPreset] = Spring.AnimationPreset.allCases
 	var curve: [Spring.AnimationCurve] = Spring.AnimationCurve.allCases
 	
-//	var modelAnimation: [Animation] {
-//		var result: [Animation] = []
-//		for index in 0..<animations.count {
-//			result.append(
-//				Animation(
-//					animation: animations[index],
-//					duration: durations[index],
-//					curve: curves[index],
-//					force: forces[index]
-//				)
-//			)
-//		}
-//		return result
-//	}
-//
-//	let animations = [
-//		"pop",
-//		"morph",
-//		"wobble"
-//	]
-	
 	let durations = [
+		0.5,
+		1.0,
 		1.5,
-		2.5,
-		3.5
+		2.0,
 	]
-	
-//	let curves = [
-//		"easeIn",
-//		"easeOut",
-//		"spring"
-//	]
 	
 	let forces = [
 		1.0,
+		1.5,
 		2.0,
-		3.2
+		2.5
 	]
 	
 }

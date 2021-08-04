@@ -9,20 +9,21 @@ import Spring
 
 struct Animation {
 	var animation: String
-	var nextAnimation:String {
-		getNextAnimation()
-	}
 	var curve: String
 	var duration: Double
 	var force: Double
+	
+	var nextAnimation:String {
+		getNextAnimation()
+	}
 }
 
 extension Animation {
 	static func getAnimation() -> Animation {
 		Animation(
-			animation: DataManager.shared.animation.randomElement()?.rawValue ?? "",
-			curve: DataManager.shared.curve.randomElement()?.rawValue ?? "",
-			duration: DataManager.shared.durations.randomElement() ?? 0,
+			animation: DataManager.shared.animation.randomElement()?.rawValue ?? "pop",
+			curve: DataManager.shared.curve.randomElement()?.rawValue ?? "linear",
+			duration: DataManager.shared.durations.randomElement() ?? 1,
 			force: DataManager.shared.forces.randomElement() ?? 1
 		)
 	}
@@ -30,12 +31,9 @@ extension Animation {
 	
 	private func getNextAnimation() -> String {
 		var currentAnimationIndex = 0
-		let nextAnimationIndex = currentAnimationIndex + 1
 		
 		for index in DataManager.shared.animation {
-			if index.rawValue == animation {
-				continue
-			} else {
+			if index.rawValue != animation {
 				currentAnimationIndex += 1
 			}
 		}
