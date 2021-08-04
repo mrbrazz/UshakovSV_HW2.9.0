@@ -1,0 +1,6 @@
+framework module Pods_UshakovSV_HW2_9_0 {
+  umbrella header "Pods-UshakovSV_HW2.9.0-umbrella.h"
+
+  export *
+  module * { export * }
+}

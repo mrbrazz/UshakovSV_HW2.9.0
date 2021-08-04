@@ -3,19 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D6BADB2726BB1D4E0095CF44 /* SpringModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BADB2626BB1D4E0095CF44 /* SpringModel.swift */; };
+		D6BADB2A26BB21B30095CF44 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BADB2926BB21B30095CF44 /* DataManager.swift */; };
 		D6DA4CA626B915FE009900E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA4CA526B915FE009900E3 /* AppDelegate.swift */; };
 		D6DA4CA826B915FE009900E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA4CA726B915FE009900E3 /* SceneDelegate.swift */; };
 		D6DA4CAA26B915FE009900E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA4CA926B915FE009900E3 /* ViewController.swift */; };
 		D6DA4CAD26B915FE009900E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6DA4CAB26B915FE009900E3 /* Main.storyboard */; };
 		D6DA4CAF26B91601009900E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6DA4CAE26B91601009900E3 /* Assets.xcassets */; };
 		D6DA4CB226B91601009900E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6DA4CB026B91601009900E3 /* LaunchScreen.storyboard */; };
+		D90CAAB7D30652A427FB0F76 /* Pods_UshakovSV_HW2_9_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54218D2AEE24040A9F34EA2 /* Pods_UshakovSV_HW2_9_0.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C66E6079AD44D5BEC0E9E31 /* Pods-UshakovSV_HW2.9.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UshakovSV_HW2.9.0.release.xcconfig"; path = "Target Support Files/Pods-UshakovSV_HW2.9.0/Pods-UshakovSV_HW2.9.0.release.xcconfig"; sourceTree = "<group>"; };
+		B54218D2AEE24040A9F34EA2 /* Pods_UshakovSV_HW2_9_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UshakovSV_HW2_9_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6BADB2626BB1D4E0095CF44 /* SpringModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringModel.swift; sourceTree = "<group>"; };
+		D6BADB2926BB21B30095CF44 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		D6DA4CA226B915FE009900E3 /* UshakovSV_HW2.9.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UshakovSV_HW2.9.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6DA4CA526B915FE009900E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6DA4CA726B915FE009900E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,7 @@
 		D6DA4CAE26B91601009900E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6DA4CB126B91601009900E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6DA4CB326B91601009900E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA9AA4B103766507F15176BE /* Pods-UshakovSV_HW2.9.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UshakovSV_HW2.9.0.debug.xcconfig"; path = "Target Support Files/Pods-UshakovSV_HW2.9.0/Pods-UshakovSV_HW2.9.0.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D90CAAB7D30652A427FB0F76 /* Pods_UshakovSV_HW2_9_0.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74CE497D14DDAF1CA31E5C9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA9AA4B103766507F15176BE /* Pods-UshakovSV_HW2.9.0.debug.xcconfig */,
+				5C66E6079AD44D5BEC0E9E31 /* Pods-UshakovSV_HW2.9.0.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D6BADB2826BB217B0095CF44 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				D6BADB2626BB1D4E0095CF44 /* SpringModel.swift */,
+				D6BADB2926BB21B30095CF44 /* DataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
 		D6DA4C9926B915FE009900E3 = {
 			isa = PBXGroup;
 			children = (
 				D6DA4CA426B915FE009900E3 /* UshakovSV_HW2.9.0 */,
 				D6DA4CA326B915FE009900E3 /* Products */,
+				74CE497D14DDAF1CA31E5C9F /* Pods */,
+				F400934FA90C1B8A8FE543E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +88,21 @@
 				D6DA4CA526B915FE009900E3 /* AppDelegate.swift */,
 				D6DA4CA726B915FE009900E3 /* SceneDelegate.swift */,
 				D6DA4CA926B915FE009900E3 /* ViewController.swift */,
+				D6BADB2826BB217B0095CF44 /* DataManager */,
 				D6DA4CAB26B915FE009900E3 /* Main.storyboard */,
 				D6DA4CAE26B91601009900E3 /* Assets.xcassets */,
 				D6DA4CB026B91601009900E3 /* LaunchScreen.storyboard */,
 				D6DA4CB326B91601009900E3 /* Info.plist */,
 			);
 			path = UshakovSV_HW2.9.0;
+			sourceTree = "<group>";
+		};
+		F400934FA90C1B8A8FE543E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B54218D2AEE24040A9F34EA2 /* Pods_UshakovSV_HW2_9_0.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6DA4CB626B91601009900E3 /* Build configuration list for PBXNativeTarget "UshakovSV_HW2.9.0" */;
 			buildPhases = (
+				095F61C5F261C2E6131B503B /* [CP] Check Pods Manifest.lock */,
 				D6DA4C9E26B915FE009900E3 /* Sources */,
 				D6DA4C9F26B915FE009900E3 /* Frameworks */,
 				D6DA4CA026B915FE009900E3 /* Resources */,
+				7464F4C5461C06AD0E9C99BE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,11 +172,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		095F61C5F261C2E6131B503B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UshakovSV_HW2.9.0-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7464F4C5461C06AD0E9C99BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UshakovSV_HW2.9.0/Pods-UshakovSV_HW2.9.0-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UshakovSV_HW2.9.0/Pods-UshakovSV_HW2.9.0-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UshakovSV_HW2.9.0/Pods-UshakovSV_HW2.9.0-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D6DA4C9E26B915FE009900E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6BADB2726BB1D4E0095CF44 /* SpringModel.swift in Sources */,
+				D6BADB2A26BB21B30095CF44 /* DataManager.swift in Sources */,
 				D6DA4CAA26B915FE009900E3 /* ViewController.swift in Sources */,
 				D6DA4CA626B915FE009900E3 /* AppDelegate.swift in Sources */,
 				D6DA4CA826B915FE009900E3 /* SceneDelegate.swift in Sources */,
@@ -283,6 +367,7 @@
 		};
 		D6DA4CB726B91601009900E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA9AA4B103766507F15176BE /* Pods-UshakovSV_HW2.9.0.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +386,7 @@
 		};
 		D6DA4CB826B91601009900E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C66E6079AD44D5BEC0E9E31 /* Pods-UshakovSV_HW2.9.0.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
