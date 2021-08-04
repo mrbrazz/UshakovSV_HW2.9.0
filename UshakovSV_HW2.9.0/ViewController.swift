@@ -6,7 +6,6 @@
 //
 
 import Spring
-import UIKit
 
 class ViewController: UIViewController {
 	
