@@ -19,7 +19,6 @@ struct Animation {
 }
 
 extension Animation {
-	
 	// MARK: - Animation Data Source
 	
 	static func getAnimation() -> Animation {

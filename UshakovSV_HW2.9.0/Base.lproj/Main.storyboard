@@ -16,8 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G69-Qq-9qL" customClass="SpringView" customModule="Spring">
+                                <rect key="frame" x="16" y="20" width="288" height="213"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Смотрим" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0E-n3-yen">
+                                        <rect key="frame" x="82.5" y="89" width="123" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="213" id="5xZ-Rx-zQD"/>
+                                    <constraint firstItem="v0E-n3-yen" firstAttribute="centerX" secondItem="G69-Qq-9qL" secondAttribute="centerX" id="9EJ-MN-w2V"/>
+                                    <constraint firstItem="v0E-n3-yen" firstAttribute="centerY" secondItem="G69-Qq-9qL" secondAttribute="centerY" id="SnS-X7-7Y6"/>
+                                </constraints>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEa-CX-S06" customClass="SpringButton" customModule="Spring">
-                                <rect key="frame" x="30" y="451" width="260" height="44"/>
+                                <rect key="frame" x="16" y="361.5" width="288" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Жмякаем">
@@ -27,33 +43,16 @@
                                     <action selector="runSpringButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yyd-Yd-WE2"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G69-Qq-9qL" customClass="SpringView" customModule="Spring">
-                                <rect key="frame" x="40" y="20" width="240" height="167"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Смотрим" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0E-n3-yen">
-                                        <rect key="frame" x="8" y="8" width="114.5" height="32.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                        <nil key="textColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="linkColor"/>
-                                <constraints>
-                                    <constraint firstItem="v0E-n3-yen" firstAttribute="leading" secondItem="G69-Qq-9qL" secondAttribute="leading" constant="8" id="SZd-tl-Q3Q"/>
-                                    <constraint firstAttribute="height" constant="167" id="hMk-Ei-o13"/>
-                                    <constraint firstItem="v0E-n3-yen" firstAttribute="top" secondItem="G69-Qq-9qL" secondAttribute="top" constant="8" id="qMV-I3-9Z5"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SEa-CX-S06" secondAttribute="bottom" constant="73" id="13D-fe-97G"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G69-Qq-9qL" secondAttribute="trailing" constant="40" id="Ul7-XH-kZG"/>
-                            <constraint firstItem="SEa-CX-S06" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Zwv-h0-4RY"/>
-                            <constraint firstItem="G69-Qq-9qL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="chS-qr-pRi"/>
-                            <constraint firstItem="G69-Qq-9qL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="eVP-x5-rr5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SEa-CX-S06" secondAttribute="trailing" constant="30" id="fjx-6a-aR7"/>
-                            <constraint firstItem="SEa-CX-S06" firstAttribute="top" relation="greaterThanOrEqual" secondItem="G69-Qq-9qL" secondAttribute="bottom" constant="264" id="z0z-Nj-LRr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G69-Qq-9qL" secondAttribute="trailing" constant="16" id="Jnb-ca-hee"/>
+                            <constraint firstItem="G69-Qq-9qL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bQK-q7-c3X"/>
+                            <constraint firstItem="G69-Qq-9qL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="htK-7P-bU1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SEa-CX-S06" secondAttribute="bottom" multiplier="1.4" id="jtr-N3-SgI"/>
+                            <constraint firstItem="SEa-CX-S06" firstAttribute="width" secondItem="G69-Qq-9qL" secondAttribute="width" id="kCy-7M-PNi"/>
+                            <constraint firstItem="SEa-CX-S06" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kc2-R6-JGJ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -64,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="61.607142857142854"/>
+            <point key="canvasLocation" x="136.875" y="61.267605633802816"/>
         </scene>
     </scenes>
     <resources>
