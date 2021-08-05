@@ -19,6 +19,9 @@ struct Animation {
 }
 
 extension Animation {
+	
+	// MARK: - Animation Data Source
+	
 	static func getAnimation() -> Animation {
 		Animation(
 			animation: DataManager.shared.animation.randomElement()?.rawValue ?? "pop",
@@ -28,6 +31,7 @@ extension Animation {
 		)
 	}
 	
+	// MARK: - Private Methods
 	
 	private func getNextAnimation() -> String {
 		var currentAnimationIndex = 0

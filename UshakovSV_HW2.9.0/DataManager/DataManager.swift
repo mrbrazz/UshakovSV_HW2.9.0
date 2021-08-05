@@ -8,18 +8,19 @@
 import Spring
 
 class DataManager {
-	static let shared = DataManager()
 	
-	private init() { }
+	// MARK: - Public Properties
+	
+	static let shared = DataManager()
 	
 	var animation: [Spring.AnimationPreset] = Spring.AnimationPreset.allCases
 	var curve: [Spring.AnimationCurve] = Spring.AnimationCurve.allCases
 	
 	let durations = [
-		0.5,
 		1.0,
 		1.5,
 		2.0,
+		2.5
 	]
 	
 	let forces = [
@@ -29,4 +30,7 @@ class DataManager {
 		2.5
 	]
 	
+	// MARK: - Initializers
+	
+	private init() { }
 }

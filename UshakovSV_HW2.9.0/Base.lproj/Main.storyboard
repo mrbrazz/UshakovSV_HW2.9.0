@@ -18,9 +18,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEa-CX-S06" customClass="SpringButton" customModule="Spring">
                                 <rect key="frame" x="30" y="451" width="260" height="44"/>
-                                <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="Button fuckin bakin">
+                                <state key="normal" title="Жмякаем">
                                     <color key="titleColor" systemColor="systemYellowColor"/>
                                 </state>
                                 <connections>
@@ -30,14 +30,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G69-Qq-9qL" customClass="SpringView" customModule="Spring">
                                 <rect key="frame" x="40" y="20" width="240" height="167"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0E-n3-yen">
-                                        <rect key="frame" x="8" y="8" width="64" height="32.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Смотрим" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0E-n3-yen">
+                                        <rect key="frame" x="8" y="8" width="114.5" height="32.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
                                 <constraints>
                                     <constraint firstItem="v0E-n3-yen" firstAttribute="leading" secondItem="G69-Qq-9qL" secondAttribute="leading" constant="8" id="SZd-tl-Q3Q"/>
                                     <constraint firstAttribute="height" constant="167" id="hMk-Ei-o13"/>
@@ -58,7 +57,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="animationViewButtonOutlet" destination="SEa-CX-S06" id="nHd-UA-ovG"/>
+                        <outlet property="animateButtonOutlet" destination="SEa-CX-S06" id="7Tz-au-mqJ"/>
                         <outlet property="settingsNameLabel" destination="v0E-n3-yen" id="8tc-63-3sU"/>
                         <outlet property="springAnimationView" destination="G69-Qq-9qL" id="zju-bb-Suy"/>
                     </connections>
@@ -69,11 +68,11 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
